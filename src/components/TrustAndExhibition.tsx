@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Shield, Sparkles, RefreshCw, Compass, ArrowRight, Instagram } from "lucide-react";
 import { motion } from "motion/react";
+import ReelsSection from "./ReelsSection";
 
 interface TrustAndExhibitionProps {
   onBookAppointment: () => void;
@@ -177,6 +178,9 @@ export default function TrustAndExhibition({ onBookAppointment, onExploreWedding
           </div>
         </div>
       </section>
+
+      {/* CONTINUOUS LOOP REELS SECTION (Curated YouTube Shorts with Mute/Unmute) */}
+      <ReelsSection />
 
       {/* 2. WHY CHOOSE RUPKOTHA (Bento Pillars) */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
